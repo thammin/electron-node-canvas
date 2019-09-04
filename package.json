@@ -4,7 +4,9 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "rebuild": "electron-rebuild",
+    "pack": "electron-packager ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,6 +19,11 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^6.0.7"
+    "electron": "^6.0.7",
+    "electron-packager": "^14.0.5",
+    "electron-rebuild": "^1.8.6"
+  },
+  "dependencies": {
+    "canvas": "^2.6.0"
   }
 }
